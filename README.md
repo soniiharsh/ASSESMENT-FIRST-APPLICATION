@@ -49,4 +49,60 @@ The AST is represented using a data structure as follows:
 ## Sample Rules
 
 - **Rule 1**: 
+((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+
+- **Rule 2**: 
+((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
+
+## Testing
+
+### Test Cases
+
+1. Create individual rules using `create_rule` and verify their AST representation.
+2. Combine example rules with `combine_rules` and ensure the resulting AST reflects the correct logic.
+3. Use sample JSON data to test `evaluate_rule` under various scenarios.
+4. Explore combining additional rules and verify functionality.
+
+## Bonus Features
+
+- **Error Handling**: Implement checks for invalid rule strings or data formats.
+- **Attribute Validation**: Ensure attributes are valid and part of a defined catalog.
+- **Rule Modification**: Allow modification of existing rules through the API.
+- **User-defined Functions**: Consider extending the rule language to support user-defined functions for advanced conditions.
+
+## Technologies Used
+
+- **Frontend**: React
+- **Backend**: [Specify backend technology, e.g., Node.js]
+- **Data Source**: [Specify your database or data storage]
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Setup
+
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/soniiharsh/ASSESMENT-FIRST-APPLICATION.git
+```
+2.Navigate to the project directory:
+ ```bash
+ cd Weather2/rule-engine-app
+```
+4.Install dependencies:
+ ```bash
+npm install
+# or
+yarn install
+```
+7. Start
+```bash
+npm start
+```
+Feel free to make any adjustments or additions as needed! If you have more questions or need further help, just let me know!
+
 
